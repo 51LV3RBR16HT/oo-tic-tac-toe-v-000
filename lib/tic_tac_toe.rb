@@ -34,4 +34,10 @@ class TicTacToe
     @board[index] != " "
   end
 
+  def valid_move?(user_index)
+    user_index.between?(0,8) && !position_taken?(@board, user_index)
+  end
+
+
+
 end
