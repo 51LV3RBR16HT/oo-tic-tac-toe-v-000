@@ -14,4 +14,4 @@ end
 
 game = TicTacToe.new
 
-play
+play(@board)
