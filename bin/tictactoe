@@ -9,9 +9,8 @@ class TicTacToe
   def initialize(tictactoe)
     @tictactoe = name
   end
-    puts "Welcome to Tic Tac Toe!"
+  play(@board)
+    # puts "Welcome to Tic Tac Toe!"
 end
 
 game = TicTacToe.new
-
-play(@board)
