@@ -46,7 +46,17 @@ class TicTacToe
     turn_count.even? ? "X" : "O"
   end
 
-  
+  def turn
+    puts "Please enter your move: 1 - 9"
+      user_input = gets.strip
+      user_index = input_to_index(user_input)
+  if valid_move?(user_index)
+      move(board, user_index, current_player
+    display_board
+  else
+    turn
+  end
+end
 
 
 end
