@@ -4,14 +4,11 @@ require_relative '../lib/tic_tac_toe.rb'
 
 
 class TicTacToe
-    def initialize(tictactoe)
-  end
-
-  def play
-    puts "Welcome to Tic Tac Toe!"
+    def initialize(tictactoe, play)
+      @tictactoe = tic_tac_toe
+      @play = play
   end
 end
 
-game = TicTacToe.new
+game = TicTacToe.new(play)
 
-play
